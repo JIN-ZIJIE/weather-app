@@ -14,7 +14,7 @@ fetch(url)
     document.getElementById("temperature").innerHTML = temperature.toFixed(1) + '°C';
     document.getElementById("feels-like").innerHTML = 'Feels Like: ' + feels_like.toFixed(1) + '°C';
     document.getElementById("humidity").innerHTML = 'Humidity: ' + humidity + '%';
-    document.getElementById("wind-speed").innerHTML = 'Wind Speed: ' + wind_speed*3.6 + 'km/h';
+    document.getElementById("wind-speed").innerHTML = 'Wind Speed: ' + wind_speed*3.6.toFixed(1) + 'km/h';
     document.getElementById("description").innerHTML = description;
   })
   .catch(error => console.log(error));
